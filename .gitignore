@@ -1,0 +1,5 @@
+_extras
+.*
+make*.py*
+nbproject
+udpne.*
