@@ -2,7 +2,7 @@
 ##j## BOF
 
 """
-de.direct_netware.classes.pas-udpne_socket
+dNG.classes.pas_udpne_socket
 
 @internal   We are using epydoc (JavaDoc style) to automate the
             documentation process for creating the Developer's Manual.
