@@ -19,7 +19,7 @@ obtain one at http://mozilla.org/MPL/2.0/.
 http://www.direct-netware.de/redirect.py?licenses;mpl2
 ----------------------------------------------------------------------------
 #echo(pasUdpNEVersion)#
-pas/#echo(__FILEPATH__)#
+#echo(__FILEPATH__)#
 ----------------------------------------------------------------------------
 NOTE_END //n"""
 
