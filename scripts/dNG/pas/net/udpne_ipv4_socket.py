@@ -2,7 +2,7 @@
 ##j## BOF
 
 """
-dNG.pas.net.udpne_socket
+dNG.pas.net.udpne_ipv4_socket
 """
 """n// NOTE
 ----------------------------------------------------------------------------
@@ -25,11 +25,11 @@ NOTE_END //n"""
 
 import socket
 
-class direct_udpne_socket(socket.socket):
+class direct_udpne_ipv4_socket(socket.socket):
 #
 	"""
-The UDP Non-Exclusive socket allows multiple applications to receive e.g. multi
-cast packets.
+The UDP Non-Exclusive socket allows multiple applications to receive e.g.
+multicast packets over IPV4.
 
 :author:     direct Netware Group
 :copyright:  (C) direct Netware Group - All rights reserved
