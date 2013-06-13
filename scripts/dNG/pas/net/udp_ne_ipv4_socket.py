@@ -2,7 +2,7 @@
 ##j## BOF
 
 """
-dNG.pas.net.udpne_ipv6_socket
+dNG.pas.net.UdpNeIpv4Socket
 """
 """n// NOTE
 ----------------------------------------------------------------------------
@@ -25,11 +25,11 @@ NOTE_END //n"""
 
 import socket
 
-class direct_udpne_ipv6_socket(socket.socket):
+class UdpNeIpv4Socket(socket.socket):
 #
 	"""
 The UDP Non-Exclusive socket allows multiple applications to receive e.g.
-multicast packets over IPV6.
+multicast packets over IPV4.
 
 :author:     direct Netware Group
 :copyright:  (C) direct Netware Group - All rights reserved
@@ -42,7 +42,7 @@ multicast packets over IPV6.
 
 	def __init__(self, listener_data = None):
 	#
-		socket.socket.__init__(self, socket.AF_INET6, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
+		socket.socket.__init__(self, socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
 		self.setblocking(0)
 
 		self.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
