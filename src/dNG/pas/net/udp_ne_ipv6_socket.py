@@ -54,7 +54,7 @@ Constructor __init__(UdpNeIpv6Socket)
 
 		if (listener_data is not None):
 		#
-			if (type(listener_data) == int): self.bind(( socket.INADDR_BROADCAST, listener_data ))
+			if (type(listener_data) is int): self.bind(( socket.INADDR_BROADCAST, listener_data ))
 			else: self.bind(listener_data)
 		#
 	#
