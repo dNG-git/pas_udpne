@@ -26,11 +26,11 @@ class UdpNeIpv4Socket(socket.socket):
 The UDP Non-Exclusive socket allows multiple applications to receive e.g.
 multicast packets over IPV4.
 
-:author:     direct Netware Group
+:author:     direct Netware Group et al.
 :copyright:  (C) direct Netware Group - All rights reserved
 :package:    pas
 :subpackage: udpne
-:since:      v0.1.00
+:since:      v0.2.00
 :license:    https://www.direct-netware.de/redirect?licenses;mpl2
              Mozilla Public License, v. 2.0
 	"""
@@ -40,7 +40,7 @@ multicast packets over IPV4.
 		"""
 Constructor __init__(UdpNeIpv4Socket)
 
-:since: v0.1.00
+:since: v0.2.00
 		"""
 
 		# pylint: disable=super-init-not-called
