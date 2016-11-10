@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-##j## BOF
 
 """
 direct PAS
@@ -21,8 +20,7 @@ https://www.direct-netware.de/redirect?licenses;mpl2
 import socket
 
 class UdpNeIpv4Socket(socket.socket):
-#
-	"""
+    """
 The UDP Non-Exclusive socket allows multiple applications to receive e.g.
 multicast packets over IPV4.
 
@@ -33,31 +31,27 @@ multicast packets over IPV4.
 :since:      v0.2.00
 :license:    https://www.direct-netware.de/redirect?licenses;mpl2
              Mozilla Public License, v. 2.0
-	"""
+    """
 
-	def __init__(self, listener_data = None):
-	#
-		"""
+    def __init__(self, listener_data = None):
+        """
 Constructor __init__(UdpNeIpv4Socket)
 
 :since: v0.2.00
-		"""
+        """
 
-		# pylint: disable=super-init-not-called
-		# pylint 1.1.0 fails to identify socket.socket.__init__() as parent constructor call
+        # pylint: disable=super-init-not-called
+        # pylint 1.1.0 fails to identify socket.socket.__init__() as parent constructor call
 
-		socket.socket.__init__(self, socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
-		self.setblocking(0)
+        socket.socket.__init__(self, socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
+        self.setblocking(0)
 
-		self.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-		if (hasattr(socket, "SO_REUSEPORT")): self.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
+        self.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        if (hasattr(socket, "SO_REUSEPORT")): self.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
 
-		if (listener_data is not None):
-		#
-			if (type(listener_data) is int): self.bind(( socket.INADDR_BROADCAST, listener_data ))
-			else: self.bind(listener_data)
-		#
-	#
+        if (listener_data is not None):
+            if (type(listener_data) is int): self.bind(( socket.INADDR_BROADCAST, listener_data ))
+            else: self.bind(listener_data)
+        #
+    #
 #
-
-##j## EOF
