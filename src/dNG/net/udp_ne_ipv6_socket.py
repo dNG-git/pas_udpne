@@ -40,9 +40,6 @@ Constructor __init__(UdpNeIpv6Socket)
 :since: v0.2.00
         """
 
-        # pylint: disable=super-init-not-called
-        # pylint 1.1.0 fails to identify socket.socket.__init__() as parent constructor call
-
         socket.socket.__init__(self, socket.AF_INET6, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
         self.setblocking(0)
 
