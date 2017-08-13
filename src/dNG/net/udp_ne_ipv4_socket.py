@@ -28,7 +28,7 @@ multicast packets over IPV4.
 :copyright:  (C) direct Netware Group - All rights reserved
 :package:    pas
 :subpackage: udpne
-:since:      v0.2.00
+:since:      v0.2.0
 :license:    https://www.direct-netware.de/redirect?licenses;mpl2
              Mozilla Public License, v. 2.0
     """
@@ -37,7 +37,7 @@ multicast packets over IPV4.
         """
 Constructor __init__(UdpNeIpv4Socket)
 
-:since: v0.2.00
+:since: v0.2.0
         """
 
         socket.socket.__init__(self, socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
