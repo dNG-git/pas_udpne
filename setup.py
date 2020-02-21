@@ -40,7 +40,7 @@ Returns the version currently in development.
 :since:  v0.1.1
     """
 
-    return "v1.0.0"
+    return "v1.0.1"
 #
 
 with TemporaryDirectory(dir = ".") as build_directory:

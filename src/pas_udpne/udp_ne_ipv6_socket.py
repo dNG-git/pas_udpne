@@ -53,7 +53,7 @@ Constructor __init__(UdpNeIpv6Socket)
         if (hasattr(socket, "SO_REUSEPORT")): self.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
 
         if (listener_data is not None):
-            if (type(listener_data) is int): self.bind(( socket.INADDR_BROADCAST, listener_data ))
+            if (type(listener_data) is int): self.bind(( "ff02::1", listener_data ))
             else: self.bind(listener_data)
         #
     #
